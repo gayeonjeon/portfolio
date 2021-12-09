@@ -388,3 +388,7 @@ a {color: inherit; text-decoration: none;}
     .ft {padding-bottom: 50px;}
     .ft .box-wrap {display: block; min-width: 400px;}
 }
+@media screen and (max-width: 360px) {
+    .hd .txt-wrap .name {font-size: 25px;}
+    .hd .txt-wrap strong {font-size: 57px;}
+}
