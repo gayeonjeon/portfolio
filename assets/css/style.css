@@ -2,7 +2,9 @@
 a {color: inherit; text-decoration: none;}
 
 .tit-area {margin-left: 75px;}
+.pc-only { display: inline-block; }
 .m-only { display: none; }
+
 
 .slider .slick-arrow  { width: 40px; height: 40px; border: transparent; border-top:5px solid #d1d1d1; border-left:5px solid #d1d1d1; position: absolute; top: 50%; font: 0/0 a; opacity: 0.8; z-index: 1;}
 .slider .slick-prev {left: 40px; transform: translateY(-50%) rotate(-45deg);}
@@ -154,7 +156,7 @@ a {color: inherit; text-decoration: none;}
 /* .content4 {margin-top: 250px;} */
 .content4 .accordion {max-width: 1000px; margin: 0 auto; margin-top: 100px;}
 .content4 input[id*="answer"] {display: none;}
-.content4 input[id*="answer"] + label {display: block; padding: 10px; border: 2px solid #fff; border-bottom: 0; color: #fff;font-weight: 500; background: #0079b7;cursor: pointer; border-radius: 20px 0 0 0; font-weight: 500; font-size: 22px;}
+.content4 input[id*="answer"] + label {display: block; padding: 10px; border: 2px solid #fff; border-bottom: 0; color: #fff;font-weight: 500; background: #0079b7;cursor: pointer; border-radius: 20px 0 0 0; font-weight: 500; font-size: 20px;}
 .content4 input[id*="answer"] + label + div {height: 0; transition: all 0.35s; overflow: hidden; background: #fff; font-size: 12px;}
 .content4 input[id*="answer"] + label + div p {display: inline-block;  padding: 20px; line-height: 25px; font-size: 16px; font-weight: 300;}
 .content4 input[id*="answer"]:checked + label + div {height: auto;}
@@ -342,6 +344,7 @@ a {color: inherit; text-decoration: none;}
 }
 @media screen and (max-width: 500px) {
     .tit-area {margin-left: 0px;}
+    .pc-only { display: none; }
     .m-only { display: inline-block; }
 
 
@@ -357,7 +360,6 @@ a {color: inherit; text-decoration: none;}
     .hd .txt-wrap .name {font-size: 25px;}
     .hd .txt-wrap strong {font-size: 57px;}
 
-
     #show {top: 15%; left: 1%;}
 
     .content .tit-area .txt-main {font-size: 38px;}
@@ -369,12 +371,13 @@ a {color: inherit; text-decoration: none;}
     .content1 .cont1-copy img {transform: translate(45deg); transition: all 0.3s ease Alternate;}
     .content1 .cont1-copy:hover img {transform: translate(720deg);}
     .web-item .img-area { display: none;}
-    .web-item .txt-box .part1 .qr-code {position: absolute; top: 0; right: 0%;}
+    .web-item .txt-box .part1 .txt-b { font-size: 40px;}
+    .web-item .txt-box .part1 .qr-code {display: none;}}
     .web-item .mob-img img{ width: 85%; display: inline-block;}
     .web-item .txt-box .txt-sub {margin-bottom: 50px;}
     .web-item .txt-box .subtxt-area {margin-top: 30px;}
-    .web-item .txt-box .center-txt { width: 90%; }
-    .web-item .txt-box .center-txt .cont {margin-right: 18px; margin-left: 18px;}
+    .web-item .txt-box .center-txt { width: 100%; }
+    .web-item .txt-box .center-txt .cont {margin-right: 18px;}
     .web-item .txt-box .center-txt .cont strong {margin-right: 5px;}
     .web-item .txt-box .btn {margin-left: 26%;}
     
@@ -384,6 +387,8 @@ a {color: inherit; text-decoration: none;}
 
     .content3 .slider-box .slick-list { padding-left: 6vw; }
     .content3 .tit-area {margin-bottom: 110px;}
+
+    .web-item .txt-box .center-txt .cont {display: block; margin-left: 0px; padding-top: 10px;}
 
     .ft {padding-bottom: 50px;}
     .ft .box-wrap {display: block;}
