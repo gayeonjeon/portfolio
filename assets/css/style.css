@@ -159,9 +159,9 @@ a {color: inherit; text-decoration: none;}
 .content4 .accordion {max-width: 1000px; margin: 0 auto; margin-top: 100px;}
 .content4 input[id*="answer"] {display: none;}
 .content4 input[id*="answer"] + label {display: block; padding: 10px; border: 2px solid #fff; border-bottom: 0; color: #fff;font-weight: 500; background: #0079b7;cursor: pointer; border-radius: 20px 0 0 0; font-weight: 500; font-size: 22px;}
-.content4 input[id*="answer"] + label + div {max-height: 0; transition: all 0.35s; overflow: hidden; background: #fff; font-size: 12px;}
+.content4 input[id*="answer"] + label + div {height: 0; transition: all 0.35s; overflow: hidden; background: #fff; font-size: 12px;}
 .content4 input[id*="answer"] + label + div p {display: inline-block;  padding: 20px; line-height: 25px; font-size: 16px; font-weight: 300;}
-.content4 input[id*="answer"]:checked + label + div {max-height: 250px;}
+.content4 input[id*="answer"]:checked + label + div {height: auto;}
 
 
 .ft {min-height: 400px; background-color: #24344b; margin-top: 50px;}
@@ -383,7 +383,7 @@ a {color: inherit; text-decoration: none;}
     .content3 .tit-area {margin-bottom: 110px;}
 
     .content4 .tit-area .txt-main .character {transform: translateY(-156%);}
-    .content4 input[id*="answer"]:checked + label + div {max-height: 335px;}
+    /* .content4 input[id*="answer"]:checked + label + div {max-height: 335px;} */
 
     .ft {padding-bottom: 50px;}
     .ft .box-wrap {display: block; min-width: 400px;}
@@ -391,4 +391,8 @@ a {color: inherit; text-decoration: none;}
 @media screen and (max-width: 360px) {
     .hd .txt-wrap .name {font-size: 25px;}
     .hd .txt-wrap strong {font-size: 57px;}
+
+    .content1 .cont1-copy {padding-bottom: 50px;}
+    .content2 .box-bg {padding: 30px 0 0 30px;}
+    .content .tit-area .txt-main .character {top: 0; transform: translateY(-100%); left: -20px;}
 }
