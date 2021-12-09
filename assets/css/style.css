@@ -349,8 +349,8 @@ a {color: inherit; text-decoration: none;}
     .content .tit-area .txt-main .main-b {font-size: 40px;}
     .content .tit-area .txt-main .main-sub {font-size: 18px;}
 
-    .hd img {right: -15%;}
-    .hd .box-bg {width: 340px; padding: 0;}
+    .hd img {width: 100%; left: 0; right: 0; top: 20%;}
+    .hd .box-bg {width: 100%; padding: 20px; left: 0;}
     .hd .box-bg .tit-box {margin-top: 0px; margin-bottom: 15px;}
     .hd .box-bg .tit-box .box2 {margin-top: 30px;}
     .hd .txt-wrap {margin-left: -15px;}
